@@ -1,0 +1,9 @@
+site_name: Notifyo
+theme: readthedocs
+site_dir: site
+docs_dir: docs
+copyright: "Copyright &copy; 2023-2024, Koot"
+
+nav:
+  - "Introduction": index.md
+  - "Installation": installation.md
