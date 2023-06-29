@@ -12,3 +12,7 @@ serve:
 
 push:
 	docker push c1oudgg/notifyo:latest
+
+nest_run:
+	cd internal; \
+	npm run start:dev
