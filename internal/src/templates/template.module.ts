@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { MailService } from './mail.service';
+import { MailService } from './template.service';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Template, TemplateSchema } from './schemas/email-template.schema';
-import { MailController } from './mail.controller';
+import { Template, TemplateSchema } from './schemas/template.schema';
+import { MailController } from './template.controller';
 
 @Module({
   imports: [
@@ -16,4 +16,4 @@ import { MailController } from './mail.controller';
   providers: [MailService],
   controllers: [MailController],
 })
-export class MailModule {}
+export class TemplateModule {}

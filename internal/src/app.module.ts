@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { MailModule } from './mail/mail.module';
+import { TemplateModule } from './templates/template.module';
 
 @Module({
   imports: [
@@ -8,7 +8,7 @@ import { MailModule } from './mail/mail.module';
     MongooseModule.forRoot(
       'mongodb+srv://famstar:famstar123@famstar-dev-cluster.9uxzl.mongodb.net/notifyo?retryWrites=true&w=majority',
     ),
-    MailModule,
+    TemplateModule,
   ],
   controllers: [],
   providers: [],
